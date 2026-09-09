@@ -13,3 +13,7 @@ docker run -d --network two-tier --name mysql-db -e MYSQL_ROOT_PASSWORD=password
 
 # Create Container from Image
 docker run -d --network two-tier --name flask-container -p 5000:5000 -e DB_HOST=mysql-db -e DB_USER=root -e DB_PASSWORD=password -e DB_NAME=task_db flask-app
+
+# MYSQL Credential
+username: root
+password: password
